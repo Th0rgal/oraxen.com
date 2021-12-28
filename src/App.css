@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
+.app {
+  background-color: #F9FBFD;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-family: "BrownRegular", "Helvetica", sans-serif;
+  font-size  : calc(16px + 2vw);
+  color      : #323232;
+  margin     : 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.subtitle {
+  font-family: "BrownRegular", "Helvetica", sans-serif;
+  color      : #AEBAC2;
+  font-size  : calc(6px + 1vw);
+  margin     : 2vw 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+header {
+  display        : flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items    : center;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  height      : 400px;
+  margin-right: 96px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.header_left {
+  display       : flex;
+  flex-direction: column;
+  margin        : 96px;
+  max-width     : 24vw;
+}
+
+.buttons {
+  width: 100%;
+  display       : flex;
+}
+
+.button {
+  color           : white;
+  font-family     : "BrownRegular", "Helvetica", sans-serif;
+  font-weight     : bold;
+  font-size       : calc(0.4vw + 10px);
+  padding         : 0.6em;
+  cursor          : pointer;
+  width           : fit-content;
+  height          : fit-content;
+  border-radius   : 1em;
+  text-decoration : none;
+  margin: 0 0.5em;
+}
+
+.yellow_gradient {
+  background-image: linear-gradient(77deg, #f38e75, #F8B893);
+}
+
+.green_gradient {
+  background-image: linear-gradient(24deg, #44cabb, #6dd9dd);
+}
+
+.black_gradient {
+  background-image: linear-gradient(56deg, #2C41A7, #6699FF);
+}
+
+.cards {
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+}
+
+.card {
+  background-color: white;
+  box-shadow      : 0px 0px 16px rgba(0, 0, 0, 0.02);
+  text-decoration : none;
+  color           : #323232;
+  border-radius   : calc(2vw + 4px);
+  width           : calc(20vw + 400px);
+  height          : calc(6vw + 140px);
+  margin          : calc(2vw + 8px);
+  display         : flex;
+  justify-content : space-between;
+}
+
+.card_text {
+  margin       : calc(1vw + 16px);
+  display       : flex;
+  flex-direction: column;
+  font-family   : "BrownRegular", "Helvetica", sans-serif;
+}
+
+.card_img {
+  border-radius: calc(2vw + 2px);
+  height       : 100%;
+}
+
+h2 {
+  font-size: calc(16px + 0.7vw);
+}
+ 
+.right {
+  text-align: right;
+}
+
+.card_p {
+  font-size: calc(12px + 0.5vw);
+  width: 150%;
+  margin   : 10px 0;
+}
+
+ .card_p.right {
+  margin-left: -50%;
+}
+
+.mask1 {
+  clip-path: circle(150% at 150% 35%);
+}
+
+.mask2 {
+  clip-path: circle(150% at -50% 37%);
+}
+
+.mask3 {
+  clip-path: circle(150% at 150% 65%);
+}
+
+@media (max-width: 900px) {
+
+  .title {
+    font-size: 36px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .subtitle {
+    font-size: 16px;
+    margin   : 24px 0;
+  }
+
+
+  .logo {
+    height: 70vw;
+    margin: auto;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .header_left {
+    margin   : auto;
+    max-width: 80vw;
+  }
+
+  .button {
+    font-size: calc(16px);
+    margin   : 8px auto;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .card_img {
+    width: 55%;
   }
 }
