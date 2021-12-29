@@ -77,8 +77,8 @@ header {
   color           : #323232;
   width           : 770px;
   border-radius   : calc(0.5vw + 2px);
-  height          : calc(6vw + 140px);
-  margin          : calc(2vw + 8px);
+  height          : 256px;
+  margin          : calc(1vw + 4px);
   display         : flex;
   justify-content : space-between;
 }
@@ -96,7 +96,7 @@ header {
 }
 
 h2 {
-  font-size: calc(16px + 0.7vw);
+  font-size: 26px;
 }
 
 .right {
@@ -104,7 +104,7 @@ h2 {
 }
 
 .card_p {
-  font-size: calc(10px + 0.4vw);
+  font-size: 16px;
   width    : 130%;
   margin   : 10px 0;
 }
