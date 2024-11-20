@@ -68,6 +68,7 @@ header {
   display       : flex;
   flex-direction: column;
   align-items   : center;
+  padding-bottom: 100px;
 }
 
 .card {
@@ -168,4 +169,15 @@ h2 {
   .card_img {
     width: 55%;
   }
+}
+
+
+.ownership {
+  text-align: center;
+  font-family: "BrownRegular", "Helvetica", sans-serif;
+  color: #AEBAC2;
+  padding: 20px 0;
+  background-color: #F1F3F5;
+  border-top: 1px solid #E0E0E0;
+  width: 100%;
 }

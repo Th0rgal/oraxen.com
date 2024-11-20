@@ -7,6 +7,9 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <footer className="ownership">
+          <p>Owned by BOM DIA LABS LLC</p>
+        </footer>
   </React.StrictMode>,
   document.getElementById('root')
 );
